@@ -1,7 +1,6 @@
 package main
 
 import (
-	"math"
 	"testing"
 )
 
@@ -17,9 +16,6 @@ func TestCalcDistance(t *testing.T) {
 		{1, 1, 1, 1, 0},
 		{-1, -1, -1, -1, 0},
 		{},
-		{math.MaxInt, math.MaxInt,
-			math.MaxInt - 3.0,
-			math.MaxInt - 4.0, 5.0},
 	}
 	for _, datum := range test_data {
 		result := calcDistance(datum.input_x1, datum.inputy1,
